@@ -30,6 +30,7 @@ do
 	echo -e " 2) Send a spoofed email"
 	echo -e " 3) Clear your SMTP username and pass from spoofmail"
 	echo -e " 4) Fix email failed"
+	echo -e " 5) Update this tool"
 	echo -e " 0) EXIT"
 	read SMTP
 	if [[ "$SMTP" = "1" ]]
@@ -69,14 +70,18 @@ do
 		fi
 		sleep 2
 		continue
+	elif [[ "$SMTP" = "5" ]]
+	then
+		cd
+		rm -rf spoofmail
+		git clone https://github.com/M3-SEC/spoofmail.git
+		cd spoofmail
+		chmod +x spoofmail.sh
+		./spoofmail.sh
 	elif [[ "$SMTP" = "0" ]]
 	then
 		clear
 		exit
-	elif [[ "$SMTP" = "back" || "$SMTP" = "b" ]]
-	then
-		clear
-		break
 	elif [[ "$SMTP" = "2" ]]
 	then
 		while true
