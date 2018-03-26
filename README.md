@@ -1,5 +1,5 @@
 # Spoofmail
-This tool will help you to spoof an Email.
+This tool will help you to spoof Email's.
 
 # Requirements
 You need an https://smtp2go.com/ Account.
