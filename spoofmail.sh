@@ -15,7 +15,7 @@ do
     echo "╚════██║██╔═══╝ ██║   ██║██║   ██║██╔══╝      ██║╚██╔╝██║██╔══██║██║██║     ";
     echo "███████║██║     ╚██████╔╝╚██████╔╝██║         ██║ ╚═╝ ██║██║  ██║██║███████╗";
     echo "╚══════╝╚═╝      ╚═════╝  ╚═════╝ ╚═╝         ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚══════╝";
-    echo "                                M3-Sec.        V: 0.01    ";
+    echo "                                M3-Sec.        V: 0.02    ";
     echo "                                                                            ";
     echo "";
     echo -e "YOU SHOULD FIRST SIGN UP ON https://www.smtp2go.com AND VERIFY YOUR EMAIL."
@@ -72,6 +72,7 @@ do
 		continue
 	elif [[ "$SMTP" = "5" ]]
 	then
+		exit
 		cd
 		rm -rf spoofmail
 		git clone https://github.com/M3-SEC/spoofmail.git
