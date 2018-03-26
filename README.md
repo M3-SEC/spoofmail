@@ -13,3 +13,6 @@ cd spoofmail
 chmod +x spoofmail.sh
 ./spoofmail.sh
 ```
+
+# Support M3
+BTC-Adress:     3Kan7wAjgxikZbty8am7v2Cu4Jn8LxKmhD
